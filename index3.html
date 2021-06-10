@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC KECAP</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">
+            <a href="index3.html"><img src="dev/logoabc.png" alt="">Lorem Ipsum</a>
+        </div>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#" class="ehs-btn">EHS Manager<span class="fas fa-caret-down first"></span></a>
+                <ul class="ehs-show">
+                    <li><a href="#">EHS SPV</a></li>
+                    <li><a href="#">Doctor</a></li>
+                    <li><a href="#">Nurse</a></li>
+                    <li><a href="#">Admin PAL/PAB</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="qtmg-btn">QT Manager<span class="fas fa-caret-down second"></span></a>
+                <ul class="qtmg-show">
+                    <li><a href="#" class="qtcs-btn">QT Country SPV<span class="fas fa-caret-down third"></span></a>
+                        <ul class="qtcs-show">
+                            <li><a href="#">QT Asistance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="lab-btn">Laboratory SPV<span class="fas fa-caret-down four"></span></a>
+                        <ul class="lab-show">
+                            <li><a href="#">Quality Assistance</a></li>
+                            <li><a href="#">QT Line Inspection</a></li>
+                            <li><a href="#">Helper</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="qti-btn">QT Improvement SPV<span class="fas fa-caret-down five"></span></a>
+                        <ul class="qti-show">
+                            <li><a href="#">Staff</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sahitation SPV</a></li>
+                    <li><a href="#">Admin FSQ</a></li>
+                </ul>
+            </li>
+            <li><a href="#"class="pm-btn">Product Manager<span class="fas fa-caret-down six"></span></a>
+                <ul class="pm-show">
+                    <li><a href="#">RTD Production SPV</a></li>
+                    <li><a href="#" class="soy-btn">SOY Production SPV<span class="fas fa-caret-down seven"></span></a>
+                        <ul class="soy-show">
+                            <li><a href="#">Line Leader</a></li>
+                            <li><a href="#">Admin Proction</a></li>
+                            <li><a href="#">Operator Proction</a></li>
+                            <li><a href="#">Helper</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" class="mm-btn">Main Manager<span class="fas fa-caret-down eigth"></span></a>
+                <ul class="mm-show">
+                    <li><a href="#"class="pps-btn">Project Planner SPV<span class="fas fa-caret-down nine"></span></a>
+                        <ul class="pps-show">
+                            <li><a href="#">Electrical & Automotif Staff</a></li>
+                            <li><a href="#">Technician</a></li>
+                            <li><a href="#" class="mes-btn">ME SPV<span class="fas fa-caret-down ten"></span></a>
+                                <ul class="mes-show">
+                                    <li><a href="#">Technician</a></li>
+                                    <li><a href="#" class="lea-btn">Leader PAL/PAB<span class="fas fa-caret-down eleven"></span></a>
+                                        <ul class="lea-show">
+                                            <li><a href="#">Operator PAL</a></li>
+                                            <li><a href="#">Operator PAB</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="main">
+        
+    </div>
+    <script>
+       $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+       });
+       $('.ehs-btn').click(function(){
+           $('nav ul .ehs-show').toggleClass("show");
+           $('nav ul .first').toggleClass("rotate");
+       });
+       $('.qtmg-btn').click(function(){
+           $('nav ul .qtmg-show').toggleClass("show");
+           $('nav ul .second').toggleClass("rotate");
+       });
+       $('.qtcs-btn').click(function(){
+           $('nav ul ul .qtcs-show').toggleClass("show");
+           $('nav ul ul .third').toggleClass("rotate");
+       });
+       $('.lab-btn').click(function(){
+           $('nav ul ul .lab-show').toggleClass("show");
+           $('nav ul ul .four').toggleClass("rotate");
+       });
+       $('.qti-btn').click(function(){
+           $('nav ul ul .qti-show').toggleClass("show");
+           $('nav ul ul .five').toggleClass("rotate");
+       });
+       $('.pm-btn').click(function(){
+           $('nav ul .pm-show').toggleClass("show");
+           $('nav ul .six').toggleClass("rotate");
+       });
+       $('.soy-btn').click(function(){
+           $('nav ul ul .soy-show').toggleClass("show");
+           $('nav ul ul .seven').toggleClass("rotate");
+       });
+       $('.mm-btn').click(function(){
+           $('nav ul .mm-show').toggleClass("show");
+           $('nav ul .eigth').toggleClass("rotate");
+       });
+       $('.pps-btn').click(function(){
+           $('nav ul ul .pps-show').toggleClass("show");
+           $('nav ul ul .nine').toggleClass("rotate");
+       });
+       $('.mes-btn').click(function(){
+           $('nav ul ul ul .mes-show').toggleClass("show");
+           $('nav ul ul ul .ten').toggleClass("rotate");
+       });
+       $('.lea-btn').click(function(){
+           $('nav ul ul ul ul .lea-show').toggleClass("show");
+           $('nav ul ul ul ul .eleven').toggleClass("rotate");
+       });
+       $('nav ul li').click(function(){
+           $(this).addClass("active").siblings().removeClass("active");
+       });
+    //    $('nav ul ul li').click(function(){
+    //        $(this).addClass("active").siblings().removeClass("active");
+    //    });
+    //    $('nav ul ul ul li').click(function(){
+    //        $(this).addClass("active").siblings().removeClass("active");
+    //    });
+    //    $('nav ul ul ul ul li').click(function(){
+    //        $(this).addClass("active").siblings().removeClass("active");
+    //    });
+    </script>
+</body>
+</html>
